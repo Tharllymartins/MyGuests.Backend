@@ -42,7 +42,8 @@ INSTALLED_APPS = [
 
 # Local Apps
 INSTALLED_APPS += [
-    "users"
+    "users",
+    "doorman"
 ]
 
 MIDDLEWARE = [
