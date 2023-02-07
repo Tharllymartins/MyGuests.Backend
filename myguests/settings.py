@@ -43,7 +43,8 @@ INSTALLED_APPS = [
 # Local Apps
 INSTALLED_APPS += [
     "users",
-    "doorman"
+    "doorman",
+    "guests"
 ]
 
 MIDDLEWARE = [
