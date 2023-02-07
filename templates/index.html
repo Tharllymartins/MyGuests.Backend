@@ -155,18 +155,20 @@
                                         </thead>
 
                                         <tbody>
+                                            {% for guest in guests %}
                                             <tr>
-                                                <td>Don Corleone</td>
-                                                <td>123.123.123.12</td>
-                                                <td>22 de agosto de 2079 as 15:30</td>
-                                                <td>22 de agosto de 2079 as 15:38</td>
-                                                <td>Darth Vader</td>
+                                                <td>{{ guest.full_name }}</td>
+                                                <td>{{ guest.cpf }}</td>
+                                                <td>{{ guest.arrival_time }}</td>
+                                                <td>{{ guest.authorization_time }}</td>
+                                                <td>{{ guest.responsible_resident }}</td>
                                                 <td>
                                                     <a href="#">
                                                         Ver informações
                                                     </a>
                                                 </td>
                                             </tr>
+                                            {% endfor %}
                                         </tbody>
                                     </table>
                                 </div>
