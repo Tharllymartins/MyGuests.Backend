@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from users.views import index
 from django.conf import settings
+from guests.views import guest_register
 
 
 urlpatterns = [
     path("", index, name="HomePage"),
+    path("guest-register", guest_register, name="guest_register"),
     path('admin/', admin.site.urls)
 ]
 
